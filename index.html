@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            domain1
+        </title>
+    </head>
+    <body>
+        <img id="test" src="test.png">
+        <p>
+            This is a parra.
+        </p>
+    </body>
+
+    <script>
+        var test = document.getElementById("test");
+        window.addEventListener("message", function(message){
+            if(message.data == "test"){
+                test.style.display = "none";
+            }
+            else{
+                test.style.display = "block";
+            }
+        })
+    </script>
+</html>
